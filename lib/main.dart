@@ -36,21 +36,21 @@ class MyAppState extends State<MyApp> {
     SystemChrome.setEnabledSystemUIOverlays([SystemUiOverlay.bottom]);
     return Scaffold(
       appBar: AppBar(
-        title: Text("Лаб. раб. студента Советкина А. В."),
+        title: Text("Мое первое приложение"),
       ),
       body: Padding(
         padding: EdgeInsets.all(15.0),
         child: ListView(
           children: <Widget>[
             MyMenuButton(
-              title: "Лабораторная работа № 1",
+              title: "Hello World! в консоль",
               actionTap: () {
                 display();
 
               },
             ),
             MyMenuButton(
-              title: "Лабораторная работа № 2",
+              title: "Hello World! на экран",
               actionTap: () {
                 onButtonTap(
                   Page1()
@@ -58,7 +58,7 @@ class MyAppState extends State<MyApp> {
               },
             ),
             MyMenuButton(
-              title: "Лабораторная работа № 3",
+              title: "Работа с окнами",
               actionTap: () {
                 onButtonTap(
                   MainPersistentTabBar(),
@@ -66,7 +66,7 @@ class MyAppState extends State<MyApp> {
               },
             ),
             MyMenuButton(
-              title: "Лабораторная работа № 4",
+              title: "Работа с БД sqlite",
               actionTap: () {
                 onButtonTap(
                 MyDbApp(),
@@ -74,7 +74,7 @@ class MyAppState extends State<MyApp> {
               },
             ),
             MyMenuButton(
-              title: "Лабораторная работа № 5",
+              title: "Работа с окнами и кнопками",
               actionTap: () {
                 onButtonTap(
                   MainCommunicationWidgets(),
@@ -83,7 +83,7 @@ class MyAppState extends State<MyApp> {
               },
             ),
             MyMenuButton(
-              title: "Лабораторная работа № 6",
+              title: "Поле ввода и валидация",
               actionTap: () {
                 onButtonTap(
                   MyForm(),
@@ -92,7 +92,7 @@ class MyAppState extends State<MyApp> {
               },
             ),
             MyMenuButton(
-              title: "Лабораторная работа № 7",
+              title: "Работа с json данными",
               actionTap: () {
                 onButtonTap(
                   MainFetchData(),
